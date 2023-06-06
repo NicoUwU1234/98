@@ -18,7 +18,7 @@ recognition.onresult = function(event){
 }
 
 function speak(){
-    var synth = window.SpeechSynthesis;
+    var synth = window.speechSynthesis;
     speak_data = document.getElementById("Text-box").value;
     speak_data = "tomando tu selfie en 5 segundos";
     var uttherThis = new SpeechSynthesisUtterance(speak_data);
